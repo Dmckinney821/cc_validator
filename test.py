@@ -13,4 +13,7 @@ cc4 = '0000-0000-0000-0000'
 assert is_valid_cc(cc4), 'credit card numbers can contain dashes'
 
 cc5 = '0000 0000 0000 0000'
-assert is_valid_cc(cc4), 'credit card numbers can contain spaces'
+assert is_valid_cc(cc5), 'credit card numbers can contain spaces'
+
+cc6 = '0000      0000    0000 0000'
+assert is_valid_cc(cc6), 'credit card numbers can contain many spaces'
